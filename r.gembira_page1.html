@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_gembira1/bakmi-jowo-mbah-gito-1080x734.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="3.pilih_tour.html">Tours</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="judul"><h1>"Pilih Rumah Makan : "</h1></div>
+
+    <div class="con1">
+        <div class="card12">
+            <img src="foto_rm_gembira1/bakmi-jowo-mbah-gito-1080x734.jpg" >
+            <div class="desc1">Bakmi Mbah Gito</div>
+        </div>
+
+        <div class="card1">
+            <a href="r.gembira_page2.html">
+            <img src="foto_rm_gembira2/IMG_20190928_133916.jpg" >
+            <div class="desc1">Ayam Panggang 3 Berku</div></a>
+        </div>
+
+    </div>
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_gembira1/113603.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_gembira1/Bakmi-Jowo-Mbah-Gito2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_gembira1/bakmimbahgito4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Bakmi Mbah Gito</h1>
+            <p>Mbah Gito memulai usaha bakmi pada tahun 2008, tidak langsung terkenal dengan tempat seluas saat ini. Keinginan memulai usaha dengan cara yang unik dan sederhana. 
+              Berkaca dari kehidupan beliau saat di desa, di desa beliau biasa membuat gubug.
+              Selama 5 tahun beliau jatuh bangun menjalankan usaha ini. Dari 2008 hingga 2013 itu adalah masa beliau membuat warung bakmi ini menjadi dikenal masyarakat.
+              Masa 5 tahun itu tidak jarang pengunjung hanya 1-2 orang saja yang datang. Bahkan tidak jarang beliau harus nombok modal. 
+              Berbeda setelah kedatangan Bpk. Herry Zudianto walikota Yogyakarta. Beliau merasa cocok dengan masakan Mbah Gito juga susana tempat tersebut, sehingga beliau sering berkunjung kembali. 
+              Bahkan membawa tamu dari berbagai tempat dengan berbagai profesi
+              </p>
+        </div>
+    
+        <div class="desc">
+            <h1>"Foto Tempat"</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:5cm;height: 4cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_gembira1/Bakmi-Jawa-Mbah-Gito-Bakmi-Jawa-Primadona-dari-Kotagede-artikel1545.jpg">
+           <img style="width:5cm;height: 4cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_gembira1/harga-menu-makanan-bakmi-jowo-mbah-gito.jpg">
+           <img style="width:5cm;height: 4cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_gembira1/rute-menuju-bakmi-jowo-mbah-gito.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>"MAP"</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63244.43981835763!2d110.3250597216797!3d-7.813363000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57722fbbdca7%3A0xa4d8164b839bc9ef!2sBakmi%20Jowo%20Mbah%20Gito!5e0!3m2!1sen!2sid!4v1687179914620!5m2!1sen!2sid"
+             width="80%" height="450" style="border:0;margin-left: 3.5cm;margin-right: 3.5cm; border-radius: 25px;margin-bottom: 3cm;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+
+                    <!-- Slideshow container -->
+                    <div class="con2">
+                      <h1>"ULASAN"</h1>
+                      <div class="slideshow-container">
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="foto_rm_gembira1/113603.jpg">
+                              <p class="author">Rikal Hasan</p>
+                            <q>Enak. The taste of the food is quite good. The gravy is savory.  
+                              The noodles are chewy.  Shredded chicken completes every bite of Bakmi Mbah Gito.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_gembira1/Bakmi-Jawa-Mbah-Gito-Bakmi-Jawa-Primadona-dari-Kotagede-artikel1545.jpg">
+                              <p class="author">Pirih</p>
+                            <q>Really like eating here. When I go to Jogja, I always eat here. 
+                              The taste is quite good but the interior decoration is very interesting. I prefer mi goreng to mi godog</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_gembira1/Bakmi-Jowo-Mbah-Gito2.jpg">
+                              <p class="author">Errin Marcella</p>
+                            <q>the tastes is delicious. but too much pepper, still good to enjoy. the price is affordable. 
+                              the place is quite unique parking fee is 5 k</q><br>
+                          </div>
+                        
+                          <!-- Next/prev buttons -->
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        
+                        <!-- Dots/bullets/indicators -->
+                        <div class="dot-container">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                      </div>
+                        <script>
+                          var slideIndex = 1;
+                      showSlides(slideIndex);
+                      
+                      function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                      }
+                      
+                      function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                      }
+                      
+                      function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                      }
+                        </script>
+       
+    </div>
+
+
+
+    <a href="r.gembira_topnav_nochose.html">
+        <div class="Back">Back</div>
+    </a>
+
+    </body>
+
+
+
+</html>
